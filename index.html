@@ -19,6 +19,13 @@
         <input type="text" id="task-title" placeholder="e.g. Finish DevOps assignment">
         <label for="task-desc">Description</label>
         <textarea id="task-desc" rows="3" placeholder="Short description of the task"></textarea>
+      <label for="task-priority">Priority</label>
+      <select id="task-priority">
+        <option value="High">High</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Low">Low</option>
+      </select>
+
         <p id="error-message" class="error" role="alert"></p>
         <button type="submit">Add Task</button>
       </form>
@@ -31,6 +38,7 @@
         <h3>Submit DevOps Assignment</h3>
         <p>Complete the Git assignment and upload the ZIP to the LMS.</p>
         <span class="status pending">Pending</span>
+        <span class="priority high">High</span>
       </div>
       <button type="button" class="toggle-btn">Mark Completed</button>
     </li>
@@ -39,6 +47,7 @@
         <h3>Read Maven Notes</h3>
         <p>Read the lecture notes about the Maven project structure.</p>
         <span class="status completed">Completed</span>
+        <span class="priority medium">Medium</span>
       </div>
       <button type="button" class="toggle-btn">Mark Pending</button>
     </li>
@@ -47,6 +56,7 @@
         <h3>Prepare Lab Report</h3>
         <p>Add screenshots and captions to the lab report.</p>
         <span class="status pending">Pending</span>
+        <span class="priority low">Low</span>
       </div>
       <button type="button" class="toggle-btn">Mark Completed</button>
     </li>

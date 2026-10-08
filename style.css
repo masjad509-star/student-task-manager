@@ -20,4 +20,8 @@ button:hover { background: #1d4ed8; }
 .status.pending { background: #fef3c7; color: #92400e; }
 .status.completed { background: #d1fae5; color: #065f46; }
 .toggle-btn { margin-top: 0; background: #6b7280; }
+.priority { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.85rem; font-weight: bold; }
+.priority.high { background: #fee2e2; color: #991b1b; }
+.priority.medium { background: #dbeafe; color: #1e40af; }
+.priority.low { background: #e5e7eb; color: #374151; }
 @media (max-width: 600px) { header h1 { font-size: 1.4rem; } .card { padding: 14px; } }
