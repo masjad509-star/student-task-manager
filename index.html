@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Task Management System</h1>
+    <p class="subtitle">Track your tasks.</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Add a New Task</h2>
+      <form id="task-form" novalidate>
+        <label for="task-title">Title</label>
+        <input type="text" id="task-title" placeholder="e.g. Finish DevOps assignment">
+        <label for="task-desc">Description</label>
+        <textarea id="task-desc" rows="3" placeholder="Short description of the task"></textarea>
+        <p id="error-message" class="error" role="alert"></p>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+    <section class="card">
+      <h2>My Tasks</h2>
+      <ul id="task-list">
+    <li class="task">
+      <div class="task-info">
+        <h3>Submit DevOps Assignment</h3>
+        <p>Complete the Git assignment and upload the ZIP to the LMS.</p>
+      </div>
+    </li>
+    <li class="task">
+      <div class="task-info">
+        <h3>Read Maven Notes</h3>
+        <p>Read the lecture notes about the Maven project structure.</p>
+      </div>
+    </li>
+    <li class="task">
+      <div class="task-info">
+        <h3>Prepare Lab Report</h3>
+        <p>Add screenshots and captions to the lab report.</p>
+      </div>
+    </li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Editor settings
+.vscode/
+.idea/
+*.swp
+# Logs
+*.log
+npm-debug.log*
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+# Maven / build output
+target/
+build/
+dist/
+# Dependencies
+node_modules/
